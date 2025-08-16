@@ -15,5 +15,13 @@ export default defineConfig({
         manifest: true,
         outDir: 'public/build',
         emptyOutDir: true,
-    }
+    },
+    server: {
+        host: '0.0.0.0',
+        port: 5173,
+        strictport: true,
+        hmr: {
+            host: 'localhost',
+        },
+    },
 });
